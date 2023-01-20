@@ -4,13 +4,11 @@ import "../style/style.css";
   name: document.querySelector(),
 }; */
 
-let name = "kirby";
+let name = "random";
 
 async function getData(name) {
   try {
-    const response = await fetch(
-      `https://www.amiiboapi.com/api/amiibo/?name=${name}`
-    );
+    const response = await fetch(`https://dog.ceo/api/breeds/image/${name}`);
     const data = await response.json();
     console.log(data);
   } catch (error) {
