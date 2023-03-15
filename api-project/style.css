@@ -1,9 +1,37 @@
 body {
     background-color: rgb(200, 200, 200);
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+    text-align: center;
+    
+}
+
+.form-input {
+    text-align: center;
+    font-size: 140%;
 }
 
 button {
     color: #274c76;
     font-size: 120%;
-    
+    font-family: 'Poppins', sans-serif;
+}
+
+.name {
+    font-size: 170%;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    margin-top: 4%;
+    margin-bottom: 2%;
+}
+
+img {
+    width: 55%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5%;
+    background-color: rgb(189, 218, 240);
 }
