@@ -18,14 +18,14 @@ async function getData() {
         Object.entries(data)
         console.log(Object.entries(data));
         let number = DOMselectors.number
-        Object.entries(data).filter((char) => char[1].number == `${_id}`)
+        Object.entries(data).filter((char) => char[1].number == `${"_id"}`)
         .forEach(char => { 
             console.log(char[1]["name"]);
             DOMselectors.box.insertAdjacentHTML(
                 "beforeend",
                 `<div class="card">
                 <div class="name">${char[1]["name"].split("_").join(" ")}</div>
-                <img class="images" alt="${char[0]["name"]}" src="${char[1]["imageUrl"]}" />
+                <img class="images" alt="${char[1]["name"]}" src="${char[1]["imageUrl"]}" />
                 </div>`
             );
         });
